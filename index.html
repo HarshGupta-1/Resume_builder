@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Resume Generator</title>
+    
+</head>
+<body>
+<div class="container" id="cv-form">
+    <h1 class="text-center my-2 background">Resume Generator</h1>
+    <div class="row">
+        <h3 class=" bgorange mt-4 " style=" text-align:center">Personal Information</h3>
+        <div class="col-md-6">
+        
+            <div class="form-group mt-4">
+                <label for="namefield">Your Name</label>
+                <input type="text" id="namefield" placeholder="Enter here" class="form-control">
+            </div>
+
+            <div class="form-group mt-4 ">
+                <label for="contactfield">Your Contact Number</label>
+                <input type="text" id="contactfield" placeholder="Enter here" class="form-control">
+            </div>
+
+
+            <div class="form-group mt-4">
+                <label for="lkfield">LinkedIn profile</label>
+                <input type="text" id="lkfield" placeholder="Enter here" class="form-control">
+    
+            </div>
+            
+        
+            <div class="form-group mt-4">
+                <label for="mailfield">Email Address</label>
+                <input type="text" id="mailfield" placeholder="Enter here" class="form-control">
+            </div>
+        </div> 
+            <div class="col-md-6">
+                <h4 >Your Address</h4>
+    
+                <div class="form-group mt-2">
+                    <label for="localityfield">Locality</label>
+                    <textarea type="text" id="localityfield" placeholder="Enter here" class="form-control"></textarea>
+                </div>
+                <div class="form-group mt-2">
+                    <label for="districtfield">District</label>
+                    <textarea type="text" id="districtfield" placeholder="Enter here" class="form-control"></textarea>
+                </div>
+                <div class="form-group mt-2">
+                    <label for="statefield">State</label>
+                    <textarea type="text" id="statefield" placeholder="Enter here" class="form-control"></textarea>
+                </div>
+                <div class="form-group mt-2">
+                    <label for="postalfield">Postal Code</label>
+                    <textarea type="text" id="postalfield" placeholder="Enter here" class="form-control"></textarea>
+                </div>
+                
+        </div>
+        <div >
+        
+            <div class="mt-4">
+                <h2  class=" bgorange mt-4 " style=" text-align:center">Education</h2>
+                <div class="matricInfo form-control mt-2">
+                    <h3   class=" bggreen mt-4 " style=" width:25vw;font-size: 25px; text-align:center">10th Details</h3>
+                    <div class="d1 row g-3">
+                        <div class="col-md-6">
+                            <label for="schoolName" class="form-label">School Name</label>
+                            <input type="text" class="form-control" id="schoolName" placeholder="Enter here">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="schoolAddress" class="form-label">School Address</label>
+                            <textarea name="schoolAddress" class="form-control" id="ad1" cols="10" rows="5" placeholder="Enter your School location Here"></textarea>
+                        </div>
+                    </div>
+                    <div class="d2 mt-2 col-md-6">
+                        <select id="passing_year1" class="form-select"></select>            
+                    </div>
+                    <div class="d3 mt-2 col-md-6">
+                        <label for="gp" class="form-label">Cumulative Grade Point Average (CGPA)</label>
+                        <input type="text" class="form-control" id="gp" placeholder="Enter here">
+                    </div>
+                </div>
+            
+                <div class="secondaryInfo form-control mt-4">
+                    <h3 class=" bggreen mt-4 " style=" width:25vw;font-size: 25px; text-align:center">12th Details</h3>
+                    <div class="d1 row g-3">
+                        <div class="col-md-6">
+                            <label for="12thschoolName" class="form-label">School Name</label>
+                            <input type="text" class="form-control" id="12thschoolName" placeholder="Enter here">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="12thschoolAddress" class="form-label">School Address</label>
+                            <textarea name="12thschoolAddress" class="form-control" id="ad2" cols="10" rows="5" placeholder="Enter your School location Here"></textarea>
+                        </div>
+                    </div>
+                    <div class="d2 mt-2 col-md-6">
+                        <select id="passing_year2" class="form-select"></select>            
+                    </div>
+                    <div class="d3 mt-2 col-md-6">
+                        <label for="12thgp" class="form-label">Cumulative Grade Point Average (CGPA)</label>
+                        <input type="text" class="form-control" id="12thgp" placeholder="Enter here">
+                    </div>
+                </div>
+            
+                <div class="clg form-control mt-4">
+                    <h3  class=" bggreen mt-4 " style=" width:25vw;font-size: 25px; text-align:center">Higher Education Details</h3>
+                    <div class="d1 col-md-6">
+                        <label for="Degree" class="form-label">Degree</label>
+                        <input type="text" class="form-control" id="Degree" placeholder="Please enter full name of degree">
+                    </div>
+                    <div class="d1 row g-3">
+                        <div class="col-md-6">
+                            <label for="clgName" class="form-label">College Name</label>
+                            <input type="text" class="form-control" id="clgName" placeholder="Enter here">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="clgAddress" class="form-label">College Address</label>
+                            <textarea name="clgAddress" class="form-control" id="ad3" cols="10" rows="5" placeholder="Enter your College location Here"></textarea>
+                        </div>
+                    </div>
+                    <div class="d3 mt-2 row g-3">
+                        <div class="col-md-6">
+                            <select id="Start_month" class="form-select" aria-label="Default select example">
+                                <option selected>Start Month</option>
+                                <option value="1">January</option>
+                                <option value="2">February</option>
+                                <option value="3">March</option>
+                                <option value="4">April</option>
+                                <option value="5">May</option>
+                                <option value="6">June</option>
+                                <option value="7">July</option>
+                                <option value="8">August</option>
+                                <option value="9">September</option>
+                                <option value="10">October</option>
+                                <option value="11">November</option>
+                                <option value="12">December</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6">
+                            <select id="Start_year" class="form-select" aria-label="Default select example"></select>            
+                        </div>   
+                    </div>
+                    <div class="d4 mt-2 row g-3">
+                        <div class="col-md-6" id="c1">
+                            <select id="End_month" class="form-select">
+                                <option selected>End Month</option>
+                                <option value="1">January</option>
+                                <option value="2">February</option>
+                                <option value="3">March</option>
+                                <option value="4">April</option>
+                                <option value="5">May</option>
+                                <option value="6">June</option>
+                                <option value="7">July</option>
+                                <option value="8">August</option>
+                                <option value="9">September</option>
+                                <option value="10">October</option>
+                                <option value="11">November</option>
+                                <option value="12">December</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6" id="c2">
+                            <select id="End_year" class="form-select" ></select>            
+                        </div>   
+                    </div>
+                    <div class="col-md-3">
+                        <label for="course" class="form-label">Course</label>
+                        <input type="text" class="form-control" id="couse" placeholder="Enter here">
+                    </div>
+                    <div class="d3 mt-2 col-md-6">
+                        <label for="clg_gp" class="form-label">Cumulative Grade Point Average (CGPA)</label>
+                        <input type="text" class="form-control" id="clg_gp" placeholder="Enter here">
+                    </div>
+                </div>
+                <div class="btnn text-center">
+                    <button class="btn btn-primary btn-sm">Add more Degree</button>
+                </div>
+
+                <hr class="line" size="6" width="100%">
+    <h2 class=" bgorange " style=" text-align:center">Work Experience</h2>
+    
+    <div class="row g-3">
+        <div class="col md-6">
+            <label for="position" class="form-label">Position</label>
+            <input type="text" id="position" class="form-control" placeholder="Enter here">
+        </div>
+        <div class="col md-6">
+            <label for="company" class="form-label">Company Name</label>
+            <input type="text" id="company" class="form-control" placeholder="Enter here">
+        </div>
+    </div>
+    <div class="d3 mt-2 row g-3">
+        <div class="col-md-6">
+            <select id="Start_month2" class="form-select" aria-label="Default select example">
+                <option selected>Start Month</option>
+                <option value="1">January</option>
+                <option value="2">February</option>
+                <option value="3">March</option>
+                <option value="4">April</option>
+                <option value="5">May</option>
+                <option value="6">June</option>
+                <option value="7">July</option>
+                <option value="8">August</option>
+                <option value="9">September</option>
+                <option value="10">October</option>
+                <option value="11">November</option>
+                <option value="12">December</option>
+            </select>
+        </div>
+        <div class="col-md-6">
+            <select id="Start_year2" class="form-select" aria-label="Default select example" ></select>            
+        </div>   
+    </div>
+    <div class="d4 mt-2 row g-3">
+        <div class="col-md-6" id="c1">
+            <select id="End_month2" class="form-select" aria-label="Default select example" >
+                <option selected>End Month</option>
+                <option value="1">January</option>
+                <option value="2">February</option>
+                <option value="3">March</option>
+                <option value="4">April</option>
+                <option value="5">May</option>
+                <option value="6">June</option>
+                <option value="7">July</option>
+                <option value="8">August</option>
+                <option value="9">September</option>
+                <option value="10">October</option>
+                <option value="11">November</option>
+                <option value="12">December</option>
+            </select>
+        </div>
+        <div class="col-md-6" id="c2">
+            <select id="End_year2" class="form-select" ></select>            
+        </div>  
+    </div><br>
+    <div class="col-md-3">
+        <label for="Internloca" class="form-label">Location of Job</label>
+        <input type="location" id="Internloca" class="form-control" placeholder="Enter here">
+    </div>
+    <div class="form-floating mt-2">
+        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" style="width:50vw;height:25vh"></textarea>
+        <label for="floatingTextarea">Highlight your specific work experience and accomplishments</label>
+        
+    </div>        
+    </div>
+    <hr class="line" size="6" width="100%">
+    <h2 class=" bgorange " style=" text-align:center">Key Skills</h2>
+    <div id="skills">
+        <div class="row g-2">
+            <div class="col-md-9 form-floating">
+                <textarea id="skill" style="width:72vw;height:50vh" class="form-control" placeholder="Leave a comment here"></textarea>
+                <label for="skill">Add relevent professional skills</label>
+            </div>
+            <div class="icon-wrap col-md-2" id="bt1">
+                <button class="btn btn-link">
+                    <svg xmlns="http://www.w3.org/2000/svg " height="17" width="15">
+                        <path d="M2.2 2.9h11.6v11.7a.9.9 0 01-.9.9H3.1a.9.9 0 01-.9-.9V2.9h0zM15.5 2.9H.5M5 2.9V1.4a.9.9 0 01.9-.9h4.2a.9.9 0 01.9.9v1.5M5.5 4.8v7.5M8 4.8v7.5M10.5 4.8v7.5" fill="none" stroke="#b0bbd1" stroke-linecap="round" stroke-miterlimit="5"></path>
+                    </svg>
+                </button>
+            </div>   
+        </div>
+    </div>
+    <h2 class=" bgorange " style=" text-align:center">Projects</h2>
+    <div class="form-floating mt-2">
+        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" style="width:72.6vw;height:50vh"></textarea>
+        <label for="floatingTextarea">Highlight your Projects which introduce you to hiring managers</label>
+        
+    </div>
+    <div class="row g-2">
+        <div class="col-md-6">
+            <label for="describe" class="form-label">Description</label>
+            <textarea id="describe" cols="30" rows="10" class="form-control" placeholder="Enter here"></textarea>
+        </div>
+        
+    </div>
+    <h3 class=" bgorange mt-4 " style=" text-align:center">Achievements </h3>
+    <form>
+    <div class="form-group">
+      <p value="required" >Achievement Name  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Achievement Name"></p>
+      <p style="margin:0;display:inline">Start Month
+      <select id='gMonth2'>
+        <option value=''>--Select Month--</option>
+        <option selected value='1'>Janaury</option>
+        <option value='2'>February</option>
+        <option value='3'>March</option>
+        <option value='4'>April</option>
+        <option value='5'>May</option>
+        <option value='6'>June</option>
+        <option value='7'>July</option>
+        <option value='8'>August</option>
+        <option value='9'>September</option>
+        <option value='10'>October</option>
+        <option value='11'>November</option>
+        <option value='12'>December</option>
+        </select> 
+        <p style="margin:0;display:inline;" align="center">Start Year
+            <select id='gMonth2'>
+                <option value=''>--Select Year--</option>
+                <option selected value='1'>2010</option>
+                <option value='2'>2011</option>
+                <option value='3'>2012</option>
+                <option value='4'>2013</option>
+                <option value='5'>2014</option>
+                <option value='6'>2015</option>
+                <option value='7'>2016</option>
+                <option value='8'>2017</option>
+                <option value='9'>2018</option>
+                <option value='10'>2019</option>
+                <option value='11'>2020</option>
+                <option value='12'>2021</option>
+                </select> 
+        </p>
+    </p>
+    <p style="margin:0;display:inline">End Month
+        <select id='gMonth2'>
+          <option value=''>--Select Month--</option>
+          <option selected value='1'>Janaury</option>
+          <option value='2'>February</option>
+          <option value='3'>March</option>
+          <option value='4'>April</option>
+          <option value='5'>May</option>
+          <option value='6'>June</option>
+          <option value='7'>July</option>
+          <option value='8'>August</option>
+          <option value='9'>September</option>
+          <option value='10'>October</option>
+          <option value='11'>November</option>
+          <option value='12'>December</option>
+          </select> 
+          <p style="margin:0;display:inline;" align="center">End Year
+              <select id='gMonth2'>
+                  <option value=''>--Select Year--</option>
+                  <option selected value='1'>2010</option>
+                  <option value='2'>2011</option>
+                  <option value='3'>2012</option>
+                  <option value='4'>2013</option>
+                  <option value='5'>2014</option>
+                  <option value='6'>2015</option>
+                  <option value='7'>2016</option>
+                  <option value='8'>2017</option>
+                  <option value='9'>2018</option>
+                  <option value='10'>2019</option>
+                  <option value='11'>2020</option>
+                  <option value='12'>2021</option>
+                  </select> 
+          </p>
+      </p>
+      <p>Role  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter role"></p>
+    </div>
+    <button type="button" class="btn btn btn-outline-dark text-center"> add</button>
+</form>
+<form>
+    <h3 class=" bgorange mt-4 " style=" text-align:center">Publications</h3>
+    <div class="form-group">
+      <p>topic  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Achievement Name"></p>
+
+    </div>
+    <button type="button" class="btn btn btn-outline-dark text-center"> Add</button>
+</form>
+<form>
+<h3 class=" bgorange mt-4 " style=" text-align:center">Conferences/Workshop</h3>
+<p>Detail  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter role"></p>
+<button type="button" class="btn btn btn-outline-dark text-center"> Add</button>
+</form>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="minor_project_jsCode.js" type="text/javascript"></script>
+            </div>
+            <script src="minor project.js" type="text/javascript"></script>
+
+            <div class="form-group">
+                <label for="">Objective</label>
+                <textarea id="objectivefield" placeholder="Enter here" class="form-control "></textarea>
+            </div>
+
+            <div class="form-group mt-2 " id="we">
+                <label for="">Work Experience</label>
+                <textarea placeholder="Enter here" class="form-control wefield"></textarea>
+                <div class="container text-center mt-3" id="weaddbutton">
+                    <button onclick="addnewwefield()" class="btn btn-primary btn-sm ">Add</button>
+                </div>
+            </div>
+
+            <div class="form-group mt-2" id="aq">
+                <label for="">Academic Qualifications</label>
+                <textarea placeholder="Enter here" class="form-control eqField"></textarea>
+                <div class="container text-center mt-2" id="aqAddButton">
+                    <button onclick="addNewAqField()" class="btn btn-primary btn-sm ">Add</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container text-center mt-3">
+            <button onclick="generateCV()" class="btn btn-primary btn-lg">Generate CV</button>
+        </div>
+    </div>
+
+<div class="container" id="cv-template">
+    <div class="row">
+
+        <div class="col-md-4 text-center py-5 background1">
+            <img src="data:image/jpeg;base64,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" alt="" srcset="" class="img-fluid myimg">
+            <div class="container font">
+                <p id="nameT1">Johnson</p>
+                <p id="contactT">+919834675832</p>
+                <p id="addressT">sector-14, chandigarh,punjab.</p>
+                <hr/>
+                <p><a id="mailT" href="#1">https://www.gmail.com/Harrysingh</a></p>
+                <p><a id="linkedT" href="#1">https://www.linkedin.com/Harrysingh</a></p>
+                
+            
+                </div>
+            
+            </div>
+    
+        <div class="col-md-8 py-3" >
+            <h1 id="nameT2" class="text-center" style="font-weight: 800;">Harry Singh</h1>
+            <div class="card mt-4 ">
+                <div class="card-header background1">
+                    <h3>Education</h3>
+                </div>
+                <div class="card-body">
+                    <p id="schoolnameT">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto, non?</p>
+                    <p id="schooladressT">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, molestias.</p>
+                    <p id="passingyearT">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, molestias.</p>
+                    <p id="cgpaT">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, molestias.</p>
+                    <hr/>
+                   
+                <p id="schoolname1T">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto, non?</p>
+                <p id="schooladress1T">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, molestias.</p>
+                <p id="passingyear1T">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, molestias.</p>
+                <p id="cgpa1T">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, molestias.</p>
+                <hr/>
+                <p id="degreeT">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto, non?</p>
+                <p id="collegenameT">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, molestias.</p>
+                <p id="collegeaddressT">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, molestias.</p>
+                <p id="startmT">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, molestias.</p>
+                <p id="endmT">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, molestias.</p>
+                <p id="startyT">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, molestias.</p>
+                <p id="endyT">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, molestias.</p>
+                <p id="courseT">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, molestias.</p>
+                <p id="cgpa2T">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, molestias.</p>
+                
+                </div>
+        </div>
+
+        <div class="card mt-4 ">
+            <div class="card-header background1">
+                <h3>Work Experience</h3>
+            </div>
+            <div class="card-body">
+                <p id="positionT">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto, non?</p>
+                <p id="companyT">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto, non?</p>
+                <p id="startm1T">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto, non?</p>
+                <p id="endm1T">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto, non?</p>
+                <p id="starty1T">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto, non?</p>
+                <p id="endy1T">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto, non?</p>
+                <p id="locationT">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto, non?</p>
+                <p id="accomplishT">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto, non?</p>
+                </div>
+                </div>
+                <div class="card mt-4 ">
+                    <div class="card-header background">
+                        <h3>Skills</h3>
+                    </div>
+                    <div class="card-body">
+                        <ul id="skillsT">
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, est.</li>
+                        </ul>
+                        <ul>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, est.</li>
+                        </ul>
+                        <ul>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, est.</li>
+                        </ul>
+                        </div>
+
+                        
+                
+                <div class="card mt-4 ">
+            <div class="card-header background">
+                <h3>Projects</h3>
+            </div>
+            <div class="card-body">
+            <p id="projectnameT">Resume builder</p>
+            <p id="projectdecribeT">built a centralised resume builder for nitj</p>
+            
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, est.</li>
+            </ul>
+            <ul>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, est.</li>
+            </ul>
+            <ul>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, est.</li>
+            </ul>
+            </div>
+
+            <h3 >Achievements </h3>
+    <form>
+    <div class="form-group">
+      <p value="required">Achievement Name  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Achievement Name"></p>
+      <p style="margin:0;display:inline">Start Month
+      <select id='gMonth2'>
+        <option value=''>--Select Month--</option>
+        <option selected value='1'>Janaury</option>
+        <option value='2'>February</option>
+        <option value='3'>March</option>
+        <option value='4'>April</option>
+        <option value='5'>May</option>
+        <option value='6'>June</option>
+        <option value='7'>July</option>
+        <option value='8'>August</option>
+        <option value='9'>September</option>
+        <option value='10'>October</option>
+        <option value='11'>November</option>
+        <option value='12'>December</option>
+        </select> 
+        <p style="margin:0;display:inline;" aling="center">Start Year
+            <select id='gMonth2'>
+                <option value=''>--Select Year--</option>
+                <option selected value='1'>2010</option>
+                <option value='2'>2011</option>
+                <option value='3'>2012</option>
+                <option value='4'>2013</option>
+                <option value='5'>2014</option>
+                <option value='6'>2015</option>
+                <option value='7'>2016</option>
+                <option value='8'>2017</option>
+                <option value='9'>2018</option>
+                <option value='10'>2019</option>
+                <option value='11'>2020</option>
+                <option value='12'>2021</option>
+                </select> 
+        </p>
+    </p>
+    <p style="margin:0;display:inline">End Month
+        <select id='gMonth2'>
+          <option value=''>--Select Month--</option>
+          <option selected value='1'>Janaury</option>
+          <option value='2'>February</option>
+          <option value='3'>March</option>
+          <option value='4'>April</option>
+          <option value='5'>May</option>
+          <option value='6'>June</option>
+          <option value='7'>July</option>
+          <option value='8'>August</option>
+          <option value='9'>September</option>
+          <option value='10'>October</option>
+          <option value='11'>November</option>
+          <option value='12'>December</option>
+          </select> 
+          <p style="margin:0;display:inline;" align="center">End Year
+              <select id='gMonth2'>
+                  <option value=''>--Select Year--</option>
+                  <option selected value='1'>2010</option>
+                  <option value='2'>2011</option>
+                  <option value='3'>2012</option>
+                  <option value='4'>2013</option>
+                  <option value='5'>2014</option>
+                  <option value='6'>2015</option>
+                  <option value='7'>2016</option>
+                  <option value='8'>2017</option>
+                  <option value='9'>2018</option>
+                  <option value='10'>2019</option>
+                  <option value='11'>2020</option>
+                  <option value='12'>2021</option>
+                  </select> 
+          </p>
+      </p>
+      <p>Role  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter role"></p>
+    </div>
+    <button type="button" class="btn btn btn-outline-dark">+ add</button>
+</form>
+<form>
+    <h3 >Publications</h3>
+    <div class="form-group">
+      <p>topic  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Achievement Name"></p>
+
+    </div>
+    <button type="button" class="btn btn btn-outline-dark">+ Add</button>
+</form>
+<form>
+<h3>Conferences/Workshop</h3>
+<p>Detail  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter role"></p>
+<button type="button" class="btn btn btn-outline-dark">+ add</button>
+</form>
+<div class="text-center">
+<button type="button" class="btn btn-primary">Generate C.V. button</button>
+<div>
+            
+    </div>
+    <div class="container mt-3 text-center">
+        <button onclick="printCV()" class="btn background">
+            Print CV
+        </button></div>
+
+
+    </div>
+
+</div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    
+</body>
+</html>
